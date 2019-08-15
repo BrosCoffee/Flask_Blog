@@ -17,5 +17,5 @@
 > * main.css
 >> * The main css model
 
-##### Learning resource: Corey Schafer https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g
-###### (Last updated date: Aug. 14th 2019) 
+##### Learning resource: [Corey Schafer](https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH)
+###### (Last updated date: Aug. 15th 2019) 
