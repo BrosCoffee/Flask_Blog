@@ -10,11 +10,11 @@ to create a personal blog. The main focus is to understand the HTTP protocol, th
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`app.run(debug=True)`
 ### flaskblog/ :
 #### __init__.py: 
-* call the `app = Flask(__name__)`
-* database `db = SQLAlchemy(app)`
-* bcrypt `bcrypt = Bcrypt(app)`
-* login manager `login_manager = LoginManager(app)`
-* then call routes.py
+> * call the `app = Flask(__name__)`
+> * database `db = SQLAlchemy(app)`
+> * bcrypt `bcrypt = Bcrypt(app)`
+> * login manager `login_manager = LoginManager(app)`
+> * then call routes.py
 #### routes.py:
 > * manage all the routes (website pages)
 > ##### forms.py:
@@ -29,6 +29,8 @@ to create a personal blog. The main focus is to understand the HTTP protocol, th
 > * `{{ ... }}` for variables
 > * layout.html
 > * Using bootstrap as the layout model for the website
+> ##### post.html
+> * Bootstrap [Modal](https://getbootstrap.com/docs/4.0/components/modal/#live-demo): search for "Live demo"
 > * etc.
 #### static/ :
 > ##### main.css
