@@ -103,3 +103,13 @@ def reset_token(token):
         flash('Your password has been updated!', 'success')
         return redirect(url_for('users.login'))
     return render_template('reset_token.html', title='Reset Password', form=form)
+
+@users.route('/my_posts', methods = ['GET'])
+@login_required
+def my_posts():
+    page = request.args.get('page', 1, type=int)
+    user = User.query.filter_by(username=current_user.username).first_or_404()
+    posts = Post.query.filter_by(author=user) \
+        .order_by(Post.date_posted.desc()) \
+        .paginate(page=page, per_page=5)
+    return render_template('user_posts.html', posts=posts, user=user)
